@@ -7,17 +7,17 @@ class Author
 
 	def initialize(name)
 		@name = name
-		@posts = []
+		@post = []
 	end
 	
 	 def posts
-    Song.all.select {|song| song.artist == self}
+    Post.all.select {|post| post.author == self}
   end
 
 
-  def add_song(song)
-  	song.artist = self
-  	@songs << song
+  def add_post(post)
+  	post.author = self
+  	@title << title
   	@@song_count += 1
   end
 
