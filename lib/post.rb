@@ -13,6 +13,8 @@ class Post
   end 
   
   def save 
+    @@all << self 
+  end
     
    def author_name
    if self.author 
