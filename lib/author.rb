@@ -1,7 +1,7 @@
 class Author
 
 	attr_accessor :name
-	attr_reader :post
+	attr_reader :posts
 
 	@@post_count = 1
 
