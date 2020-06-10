@@ -12,6 +12,8 @@ class Post
     @@all
   end 
   
+  def save 
+    
    def author_name
    if self.author 
      self.author.name 
