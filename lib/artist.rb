@@ -15,6 +15,6 @@ class Artist
   def songs
     @songs
   end
-binding.pry
+
  
 end
