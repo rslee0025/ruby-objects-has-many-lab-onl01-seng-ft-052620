@@ -1,20 +1,25 @@
-class Artist
-  attr_accessor :name
+class Author
+  attr_accessor :name, :age, :books
 
-  def initialize(name)
-    @name = name
-    @songs = []
+  @@all = []
+
+  def initialize(name, age)
+    self.name = name
+    self.age = age
+    self.books = []
+    @@all << self
   end
 
-  def add_song(song)
-    @songs << song
-    song.artist = self
+  def add_book(book_object)
+    self.books << book_object
+    book_object.author = self
   end
 
-  def songs
-    @songs
+  def genres
+    self.books.map { |book| book.genre }.uniq
   end
 
- 
+  def self.all
+    @@all
+  end
 end
-
