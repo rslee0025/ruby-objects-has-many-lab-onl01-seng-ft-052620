@@ -14,7 +14,7 @@ class Author
   end
   
   def add_post_by_title(title)
-    title = Song.new
+    title = Song.new(title)
     add_post(post)
   end
 end 
